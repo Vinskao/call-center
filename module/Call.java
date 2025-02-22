@@ -2,6 +2,7 @@ public class Call {
     private static int idCreator = 0;
     private int id;
     private EmpRank rank;
+    private boolean isActive = true;
 
     public Call(EmpRank rank) {
         this.id = ++idCreator;
@@ -14,6 +15,10 @@ public class Call {
 
     public int getId() {
         return id;
+    }
+
+    public boolean isActive() {
+        return isActive;
     }
 
     @Override

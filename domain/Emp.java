@@ -1,9 +1,11 @@
 abstract class Emp {
     protected EmpRank rank;
+    protected String name;
     private boolean isAvailable = true;
 
-    public Emp(EmpRank rank) {
+    public Emp(EmpRank rank, String name) {
         this.rank = rank;
+        this.name = name;
     }
 
     public boolean isAvailable() {
@@ -13,16 +15,16 @@ abstract class Emp {
     public void handleCall(Call call) {
         // 如果員工是空閒的，則處理電話
         if (this.isAvailable) {
-            System.out.println(this.getClass().getSimpleName() + " is handling call " + call);
+            System.out.println(this.name + " (" + this.rank + ") is handling call " + call);
             this.isAvailable = false;
             endCall();
         } else {
-            System.out.println(this.getClass().getSimpleName() + " is not available");
+            System.out.println(this.name + " is not available");
         }
     }
 
-    public void endCall() {
-        System.err.println(this.getClass().getSimpleName() + " finished call");
+    protected void endCall() {
+        System.out.println(this.name + " finished call");
         this.isAvailable = true;
     }
 }

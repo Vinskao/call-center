@@ -1,5 +1,5 @@
 public class JuniorEmp extends Emp {
-    public JuniorEmp() {
-        super(EmpRank.JUNIOR);
+    public JuniorEmp(String name) {
+        super(EmpRank.JUNIOR, name);
     }
 } 

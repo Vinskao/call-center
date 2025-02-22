@@ -1,5 +1,5 @@
 public class BossEmp extends Emp {
-    public BossEmp() {
-        super(EmpRank.BOSS);
+    public BossEmp(String name) {
+        super(EmpRank.BOSS, name);
     }
 } 
