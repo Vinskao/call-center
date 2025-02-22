@@ -32,7 +32,7 @@ replay_pid*
 .project
 .vscode/
 
-# Build directories
+# Build BOSSies
 bin/
 build/
 target/
