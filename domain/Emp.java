@@ -1,4 +1,4 @@
-public class Emp {
+abstract class Emp {
     protected EmpRank rank;
     private boolean isAvailable = true;
 

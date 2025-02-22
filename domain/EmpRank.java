@@ -1,4 +1,3 @@
-
 public enum EmpRank {
     JUNIOR,
     LEAD,
